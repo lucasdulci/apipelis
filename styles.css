@@ -1,0 +1,122 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-size: 45px;
+}
+h1 {
+    margin: 0;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Formulario de búsqueda */
+#search-input {
+    width: 70%;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1.2rem;
+}
+
+#search-button {
+    background-color: #ab2c2c;
+    color: #fff;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+/* Resultados de películas */
+#movie-results {
+    display: grid;
+    grid-template-columns: repeat(3,3fr);
+   
+}
+
+.movie-card {
+    width: 80%;
+    background-color: #ffffff;
+    border: 1px solid #e0dada;
+    border-radius: 10px;
+    margin: 1rem 0;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 5px 4px rgba(222, 5, 5, 0.1);
+    transition: transform 0.2s;
+}
+
+.movie-card img {
+    max-width: 100%;
+}
+
+.movie-card h2 {
+    margin: 0.5rem 0;
+    font-size: 1.5rem;
+}
+
+/* Detalles de la película */
+#movie-details {
+    background-color: #d09494;
+    border: 1px solid #dbdbdb;
+    border-radius: 10px;
+    margin: 1rem 0;
+    padding: 2rem;
+    text-align: center;
+    display: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+#back-button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    display: none;
+}
+
+/* Animación de card al pasar el mouse */
+.movie-card:hover,
+#movie-details:hover {
+    transform: scale(1.05);
+}
+
+/* Botón de detalles con color rojo oscuro */
+.details-button {
+    background-color: #8B0000; /* Color rojo oscuro */
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
